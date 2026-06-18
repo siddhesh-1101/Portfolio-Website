@@ -10,21 +10,21 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:example@mail.com" data-cursor="disable">
-                example@mail.com
+              <a href="mailto:bhorsidd@gmail.com" data-cursor="disable">
+                bhorsidd@gmail.com
               </a>
             </p>
             <h4>Phone</h4>
             <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
+              <a href="tel:+917709880820" data-cursor="disable">
+                +91 7709880820
               </a>
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com"
+              href="https://github.com/siddhesh-1101"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -32,7 +32,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/siddhesh-bhor-4464372b3/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -40,12 +40,12 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href="https://x.com"
+              href="https://www.linkedin.com/in/siddhesh-bhor-4464372b3/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
-              Twitter <MdArrowOutward />
+              Professional <MdArrowOutward />
             </a>
             <a
               href="https://www.instagram.com"
@@ -58,10 +58,13 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Moncy Yohannan</span>
+              Designed and Developed <br /> by <span>Siddhesh Bhor</span>
             </h2>
+            <p>
+              Artificial Intelligence Engineer | Full Stack Developer
+            </p>
             <h5>
-              <MdCopyright /> 2024
+              <MdCopyright /> 2024 - All rights reserved
             </h5>
           </div>
         </div>

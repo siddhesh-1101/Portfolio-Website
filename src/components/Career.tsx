@@ -1,3 +1,4 @@
+import { portfolioData } from "../data/portfolioData";
 import "./styles/Career.css";
 
 const Career = () => {
@@ -12,48 +13,36 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
+          
+          {/* Education Section */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>{portfolioData.education.degree}</h4>
+                <h5>{portfolioData.education.university}</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>{portfolioData.education.year}</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              CGPA: {portfolioData.education.cgpa}
             </p>
           </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+
+          {/* Experience Section */}
+          {portfolioData.experience.map((exp, index) => (
+            <div className="career-info-box" key={index}>
+              <div className="career-info-in">
+                <div className="career-role">
+                  <h4>{exp.role}</h4>
+                  <h5>{exp.company}</h5>
+                </div>
+                <h3>{exp.period}</h3>
               </div>
-              <h3>20XX</h3>
+              <p>
+                {exp.description}
+              </p>
             </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
-              </div>
-              <h3>NOW</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 .work-section h2 {
-  margin-top: 100px;
-  font-size: 70px;
+  margin-top: 20px;
+  font-size: 60px;
   font-weight: 500;
 }
 .work-section h2 > span {
@@ -8,9 +8,10 @@
 }
 .work-section {
   transition: 0s;
-  height: 100vh;
+  height: 80vh;
   box-sizing: border-box;
   will-change: transform;
+  margin-bottom: 100px;
 }
 .work-container {
   margin: auto;
@@ -28,14 +29,14 @@
   position: relative;
 }
 .work-box {
-  padding: 80px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   width: 600px;
   box-sizing: border-box;
   border-right: 1px solid #363636;
   flex-shrink: 0;
-  gap: 50px;
+  gap: 30px;
   justify-content: start;
 }
 .work-flex .work-box:nth-child(even) {
@@ -72,7 +73,7 @@
 }
 
 .work-info h4 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   margin: 0;
 }
@@ -80,7 +81,8 @@
   font-weight: 200;
   color: #adacac;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 2px;
+  font-size: 12px;
 }
 .work-info > p {
   width: 90%;
